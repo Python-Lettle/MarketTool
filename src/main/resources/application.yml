@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+# log4j2 配置
+logging:
+  config: log4j2-spring.xml
+
+spring:
+  application:
+    name: MarketTool
+
+  # bean 注入
+  main:
+    allow-bean-definition-overriding: true
+
+  # thymeleaf 缓存配置
+  thymeleaf:
+    cache: false
+
+  # 数据库配置
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/market_tool?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
