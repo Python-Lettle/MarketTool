@@ -33,6 +33,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     public List<User> selectByUsername(String user_name) {
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("user_name", user_name);
+        System.out.println("selecting " + user_name);
         return baseMapper.selectList(queryWrapper);
     }
 }

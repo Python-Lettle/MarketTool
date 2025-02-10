@@ -9,22 +9,24 @@
 package cn.lettle.MarketTool.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.stereotype.Repository;
 
 @Data
-@Getter
-@Setter
 @TableName("user")
-public class User {
+@Repository
+public class User
+{
     @TableId(type = IdType.AUTO)
-    private Integer user_id;
-    private String user_name;
-    private String user_email;
-    private String user_passwd;
-    private int user_authority; // 用户权限 0为ban 1为普通游客 2为可操作用户 3为管理员
+    public Integer userId;
+    public String userName;
+    public String userEmail;
+    public String userPasswd;
+    public int userAuthority; // 用户权限 0为ban 1为普通游客 2为可操作用户 3为管理员
 
 }

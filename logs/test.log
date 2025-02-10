@@ -1,0 +1,8 @@
+[ 15:13:07 main ] INFO  cn.lettle.MarketTool.MarketToolApplicationTests - Starting MarketToolApplicationTests using Java 17.0.14 with PID 11700 (started by 10714 in D:\work\gitfile\github\MarketTool)
+[ 15:13:07 main ] INFO  cn.lettle.MarketTool.MarketToolApplicationTests - No active profile set, falling back to 1 default profile: "default"
+[ 15:13:09 main ] INFO  cn.lettle.MarketTool.MarketToolApplicationTests - Started MarketToolApplicationTests in 2.698 seconds (process running for 3.852)
+[ 15:13:11 main ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[ 15:13:11 main ] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d47b021
+[ 15:13:11 main ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[ 15:13:11 SpringApplicationShutdownHook ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[ 15:13:11 SpringApplicationShutdownHook ] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
