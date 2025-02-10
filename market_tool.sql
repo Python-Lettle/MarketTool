@@ -14,7 +14,7 @@
  Date: 10/02/2025 15:35:21
 */
 
-SET NAMES utf8mb4;
+SET NAMES utf8;
 SET FOREIGN_KEY_CHECKS = 0;
 
 -- ----------------------------
@@ -23,15 +23,15 @@ SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS `item`;
 CREATE TABLE `item`  (
   `item_id` int UNSIGNED NOT NULL AUTO_INCREMENT,
-  `item_name` tinytext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL,
+  `item_name` tinytext CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
   `item_now_price` int NULL DEFAULT NULL,
   `item_amount` int NULL DEFAULT NULL,
-  `item_formula` tinytext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL,
+  `item_formula` tinytext CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
   `item_type` int NULL DEFAULT NULL,
   `item_type2` int NULL DEFAULT NULL,
   PRIMARY KEY (`item_id`) USING BTREE,
   UNIQUE INDEX `item_id_UNIQUE`(`item_id` ASC) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 201 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 201 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of item
@@ -243,13 +243,13 @@ INSERT INTO `item` VALUES (200, '全钢框架', 0, 0, NULL, 4, 5);
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user`  (
   `user_id` int UNSIGNED NOT NULL AUTO_INCREMENT,
-  `user_name` tinytext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `user_email` tinytext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL,
-  `user_passwd` tinytext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL,
+  `user_name` tinytext CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `user_email` tinytext CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+  `user_passwd` tinytext CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
   `user_authority` int NOT NULL,
   PRIMARY KEY (`user_id`) USING BTREE,
   UNIQUE INDEX `user_pk_2`(`user_id` ASC) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of user
